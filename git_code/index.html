@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车页面</title>
+       <link rel="stylesheet" href="./css/code.css">
+</head>
+<body>
+    <div class="f">
+        <h1>购物车</h1>
+        <!-- 商品列表区域 -->
+        <div id="cart-items">
+			
+            <div class="cart-item">
+                <input type="checkbox" class="select-checkbox">
+                <input type="text" class="name-input" value="苹果">
+                <div>数量: <input type="number" class="quantity-input" value="1" min="1"></div>
+                <div>价格: ¥<input type="number" class="price-input" value="10" min="0"></div>
+                <div><button class="delete-btn">删除</button></div>
+            </div>
+        </div>
+
+       <!-- 添加商品按钮
+        <div class="controls">
+            <button id="add-item">添加商品</button>
+        </div> -->
+
+        <!-- 总价与操作按钮 -->
+        <div class="total-area">
+            <div class="total-price" id="total-price">总价: ¥10</div>
+            <div class="actions">
+				<button id="add-item">添加商品</button>
+                <button id="select-all">全选订单</button>             
+                <button id="submit-order">提交订单</button>
+				<div class="selected-count-box" id="selected-count">已选中: 0</div>
+            </div>
+        </div>
+    </div>
+	<script src="./js/code.js"></script>
+</body>
+</html>
